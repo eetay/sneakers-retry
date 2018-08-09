@@ -37,7 +37,7 @@ $ bundle install
 read documentation for Sneakers
 initialize your worker with the Maxretry2 handler:
 
-```
+```ruby
 class MyWorker
   ...
    from_queue 'audit_service', {
