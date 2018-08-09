@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'sneakers-retry'
-  s.version     = '0.1.5'
+  s.version     = '0.1.7'
   s.date        = '2018-08-01'
   s.summary     = "A retry handler for Sneakers compatible with RabbitMQ move message"
   s.description = <<-EOF
