@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'sneakers-retry'
-  s.version     = '0.1.1'
+  s.version     = '0.1.4'
   s.date        = '2018-08-01'
   s.summary     = "Retry handler for sneakers"
   s.description = "A simple hello world gem"

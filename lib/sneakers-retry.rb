@@ -1,3 +1,1 @@
-module SneakersRetry
-  
-end
+require './lib/sneakers-retry/handlers/maxretry2.rb'
