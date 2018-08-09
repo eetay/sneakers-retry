@@ -1,1 +1,1 @@
-require './lib/sneakers-retry/handlers/maxretry2.rb'
+require 'sneakers-retry/handlers/maxretry2.rb'
