@@ -1,7 +1,6 @@
-require 'base64'
 require 'json'
 
-module Sneakers
+module SneakersRetry
   module Handlers
     #
     # Maxretry uses dead letter policies on Rabbitmq to requeue and retry
@@ -139,8 +138,6 @@ module Sneakers
             error: reason.to_s,
             num_attempts: num_attempts,
             failed_at: Time.now.iso8601,
-            #payload: Base64.encode64(msg.to_s),
-            #properties: Base64.encode64(props.to_json)
             properties: props.to_hash
           }.tap do |hash|
             if reason.is_a?(Exception)

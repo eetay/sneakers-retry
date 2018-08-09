@@ -1,1 +1,3 @@
-require './sneakers-retry/maxretry2'
+module SneakersRetry
+  
+end
