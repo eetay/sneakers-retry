@@ -14,5 +14,5 @@ to manually re-enqueue the messages which failed all of their retries
   s.files       = Dir.glob("lib/**/*")
   s.homepage    = 'https://github.com/eetay/sneakers-retry'
   s.license     = 'MIT'
-  gem.executables   = ["my-rails-root"]
+  s.executables   = ["my-rails-root"]
 end
