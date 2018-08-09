@@ -10,3 +10,42 @@ allowing you to use [RabbitMQ's shovel plugin](https://www.rabbitmq.com/shovel.h
 to manually re-enqueue the messages who failed all retries
 Something that is sometimes needed in production systems
 
+
+# Installation
+
+Include it in your Gemfile.
+
+```bash
+$ cat Gemfile
+```
+
+```ruby
+...
+gem 'sneakers-retry'
+...
+```
+
+Next install it with Bundler.
+
+```bash
+$ bundle install
+```
+
+
+# Use:
+
+read documentation for Sneakers
+initialize your worker with the Maxretry2 handler:
+
+```
+class MyWorker
+  ...
+   from_queue 'audit_service', {
+      handler: SneakersRetry::Handlers::Maxretry2,
+      ...
+   }
+   ...
+end
+```
+
+
